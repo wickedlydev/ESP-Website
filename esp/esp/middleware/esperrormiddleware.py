@@ -204,8 +204,7 @@ class ESPErrorMiddleware(MiddlewareMixin):
         except:
             # well, we couldn't, but at least display something
             # (actually it will immediately fail on main because someone
-            # removed the safe version of the template and
-            # miniblog_for_user doesn't silently fail but best not to put
+            # removed the safe version of the template but best not to put
             # in ugly hacks and make random variables just happen to work.)
             pass
         # TODO(benkraft): merge our various error templates (403, 500, error).
